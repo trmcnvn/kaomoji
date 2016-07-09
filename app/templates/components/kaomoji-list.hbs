@@ -1,0 +1,15 @@
+{{#each-in data as |category subcategories|}}
+  {{#bs-accordion}}
+    {{#bs-accordion-item title=(capitalize category)}}
+      {{#bs-accordion}}
+        {{#each-in subcategories as |subcategory kaomojis|}}
+          {{#bs-accordion-item title=(capitalize subcategory)}}
+            {{#each kaomojis as |kaomoji|}}
+              {{kaomoji-item kaomoji=kaomoji}}
+            {{/each}}
+          {{/bs-accordion-item}}
+        {{/each-in}}
+      {{/bs-accordion}}
+    {{/bs-accordion-item}}
+  {{/bs-accordion}}
+{{/each-in}}
