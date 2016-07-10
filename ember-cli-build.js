@@ -4,10 +4,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    storeConfigInMeta: false,
-    'ember-composable-helpers': {
-      only: ['contains']
-    }
+    storeConfigInMeta: false
   });
 
   // Use `app.import` to add additional libraries to the generated
