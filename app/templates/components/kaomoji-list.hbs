@@ -12,7 +12,7 @@
       {{#each obj.kaomoji as |kaomoji|}}
         {{kaomoji-item
             kaomoji=kaomoji
-            isVisible=(or (is-empty filterValue) (contains filterValue obj.tags))}}
+            isVisible=(or (is-empty filterValue) (contains (to-lower filterValue) obj.tags))}}
       {{/each}}
     {{/each}}
   </div>
