@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/disvelop/kaomoji.svg?branch=master)](https://travis-ci.org/disvelop/kaomoji)
 [![Website](https://img.shields.io/website-up-down-green-red/http/kaomoji.disvelop.net.svg?maxAge=2592000)](https://kaomoji.disvelop.net/)
 
-To run the development environment for this application, you will need to have [Git](https://git-scm.com/) [Node.js](https://nodejs.org/en/), [Ember CLI](https://ember-cli.com/), and [Bower](https://bower.io/).
+To run the development environment for this application, you will need to have [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/), [Ember CLI](https://ember-cli.com/), and [Bower](https://bower.io/).
 
 ## Contributing
 
