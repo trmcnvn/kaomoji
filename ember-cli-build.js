@@ -5,8 +5,8 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     storeConfigInMeta: false,
-    'ember-bootstrap': {
-      importBootstrapFont: false
+    'ember-composable-helpers': {
+      only: ['contains']
     }
   });
 

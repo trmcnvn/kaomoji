@@ -1,15 +1,19 @@
-{{#each-in data as |category subcategories|}}
-  {{#bs-accordion}}
-    {{#bs-accordion-item title=(capitalize category)}}
-      {{#bs-accordion}}
-        {{#each-in subcategories as |subcategory kaomojis|}}
-          {{#bs-accordion-item title=(capitalize subcategory)}}
-            {{#each kaomojis as |kaomoji|}}
-              {{kaomoji-item kaomoji=kaomoji}}
-            {{/each}}
-          {{/bs-accordion-item}}
-        {{/each-in}}
-      {{/bs-accordion}}
-    {{/bs-accordion-item}}
-  {{/bs-accordion}}
-{{/each-in}}
+<div class="row">
+  <div class="twelve columns">
+    <input class="u-full-width" type="text"
+           placeholder="Filter kaomoji... ___〆(・∀・)"
+           oninput={{action (mut filterValue) value="target.value"}}>
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns">
+    {{#each data as |obj|}}
+      {{#each obj.kaomoji as |kaomoji|}}
+        {{kaomoji-item
+            kaomoji=kaomoji
+            isVisible=(or (is-empty filterValue) (contains filterValue obj.tags))}}
+      {{/each}}
+    {{/each}}
+  </div>
+</div>
