@@ -1,27 +1,28 @@
----
 language: node_js
 node_js:
-  - "4"
-
+- '4'
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - npm install phantomjs-prebuilt
-
+- npm config set spin false
+- npm install -g bower
+- npm install phantomjs-prebuilt
 install:
-  - npm install
-  - bower install
-
+- npm install
+- bower install
 script:
-  - ember test
-
+- ember test
 deploy:
   provider: script
   script: ember deploy production
   skip_cleanup: true
+env:
+  global:
+  - secure: EqxxVqnWltstr8iUQILibdUq7GhB578wLjCh0XZi0xU9JR/P6p3FubElQYWhuHNf4pnuPgXqCUAfA2lXk/Zq7XPhF+4abP1EGFjxcVLCGTCb0ngS9B/Ki2s27tTd0a/SCmU0w1bweKXhJwzpowyKAhy9dVZD8T2d99c/wBFrWsgTprpAmqSskutaNegzx85RC3UxKNskHBYyVpwHlTD303ZgqCO6OVK800cFLhfWEnXmELE2azoDFvzWZbgVnYsQgIxnKiKdnYnfKrQNjyeMUwwzn8fqheaHSB91D5c3v0OCOHrGlUEJRiam5xjY/BljH9eWKWX4F/bzv2FLJhHRgTzrT7tLh+X/JwejoqyQx4t4pqo5PyOgg9O7FgNwOLQXAXZEwAFvmLPWfJJGur6QiILE9UFAF4BJFyD6oNDoetTXHAKkAZwun+7tBgWb3sqM1xwtYTAQG1GuCp/DtYuO5kgUJNb4p6MWdoF/ZbqLR6K5Llgq+IyP2rgzNSyQzYyzA4hoXhlWEFFgkWNNVkKDeTG284FIo25995FPWIXsI1pCNvDPBAEKePQEMCFuqopi2bbjEanjzDkc5cZ8CIrKLncS36fmiFGdSmKCRiXheZNRPs38sr3WUTZ9XRIn0CU10teRDUddtGKeUIgMImjFHjQEqfTHYefS35tQZxo/eNo=
+  - secure: WmJ3aS971brUUcuDREe8BjakQnfpmsCVq/icWsZsots0ErvPbYybIQ+JQ1/Vz3r5NIViQG8gpLMteCfGm0jJ4O5W/V8g7KnMOEWL9oY/3WAUNevwhDdrcOZrybByGy4JEbXBlucZid4fODml64eZkA7jxKTUJdl3GOS0X4z8xy7oJcxlZwDESVRA/gKNyTWh1gKuwuXpIulcxemOZ4zDfKSs9ECSCziiMPSn21URBUmzLWf/HJDf+ktqZfLKC3zZ9VPR3YIvhOSqcaSGa4LaZU6zPFYWArCyPIHV7UaKGILjHHK7OMriU0B3nNvAdjeteVjxoWcLz8KM390JylPvrFYD77DuJpBsPfLxUibphZ8kvQRJFA4EWkdx9Q7RX1kpD/U3wMqMqB/LVTC2HGJrC2wzyZNuywVIPpr4nNynmbQnfoQO5FQOqLYHG+uZeNQ9SzmXWFVUo/on0gZsZRi/U6Hh6+eKP14DKe7fyNShvz5cHnOaK3jjzZey6Ax8X6lHaoyG59SDd9YK1pthtTkrM0CnCWe6bOaUEWe/+qHkMViF6RKdxZAbEhvXIV98QKly4TdLJnGoHpXUekezq/dh5W/jKdypWJwqiwD7FTg6p5Li3UIIWNiP92bK0+EG2i9q0DXUg6kOaYTYUp36NeCp0cD913zsjk+u9sfq9kfwUjU=
+notifications:
+  slack:
+    on_pull_requests: false
+    secure: UpTwago48tbnJqsoI84mGfc0QUdvcPI5QehdfPMw2NG9iv/G3TXTkCZEjmGQ6in8qOa3jHd/mvg2eT5iGHR0g8ovvXc8ej1Hn389v2KeIIby31mlGkvUYWPaEZb01g5UNTUzedrTVhftKfHx/au14xam/9kN4ZkFx+aS/65bI+Ard0N4qoduvjpq7bqKaZGBvR+RKaMD7hJsy/Etmgd7HtZ3/1zDL8Bl4DolIUEZlZ3qdGVpXFjn2HLeouSGWvUQJEMDdjpV0pcEDqYVzI8AWIMVkYnHPQBhP2EwvY024Xyku6gh/B5K8UXocKK7MVurzfQ0NIfNa5rhVOCwwssabPDIuogpPNy7MMBtligeia5ddegyXLMZUeM9IwRXW3EzBU6IDIetiQUokUDomxRBCmPOPnGG3XJrsQFwqohofht0LUW2HHJi48oJqXAmqnSWM9pbOVhgTjr+TLg9jPDZF6/YbLDflwa8SUIN+7hZm9uqb6g7Wpvcs1Azrl4SCYeDQ2xOKrpxzBa3qq7vmMwALjoo9rOk5y3MindfxA+lJfTXCN2qHFMWdHIuu+QOOxpd59CMV/RVOmjPDa87+JH5WMLTOoK+rlcKdynC8diaGcCbaVwKrqqwNeyQFoXPanoCb6drPAi14IfHIbegfUTyRi0xVpdus52fHuf3civWAdc=
