@@ -19,4 +19,9 @@ install:
   - bower install
 
 script:
-  - npm test
+  - ember test
+
+deploy:
+  provider: script
+  script: ember deploy production
+  skip_cleanup: true
