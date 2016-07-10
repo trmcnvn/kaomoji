@@ -1,53 +1,42 @@
 # Kaomoji
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+*＼(^ω^＼) All of your favourite kaomoji (／^ω^)／*
 
-## Prerequisites
+[![Build Status](https://travis-ci.org/disvelop/kaomoji.svg?branch=master)](https://travis-ci.org/disvelop/kaomoji)
+[![Website](https://img.shields.io/website-up-down-green-red/http/kaomoji.disvelop.net.svg?maxAge=2592000)](https://kaomoji.disvelop.net/)
 
-You will need the following things properly installed on your computer.
+To run the development environment for this application, you will need to have [Git](https://git-scm.com/) [Node.js](https://nodejs.org/en/), [Ember CLI](https://ember-cli.com/), and [Bower](https://bower.io/).
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## Contributing
+
+Contributions are welcome via pull requests and issues!
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone` this repository
 * `npm install`
 * `bower install`
 
-## Running / Development
+## Running
 
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your app at http://localhost:4200.
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
+## Running Tests
 
 * `ember test`
 * `ember test --server`
 
-### Building
+## Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* `ember build`
 
-### Deploying
 
-Specify what it takes to deploy your app.
+## License 
+Copyright (c) 2016 Disvelop
 
-## Further Reading / Useful Links
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
