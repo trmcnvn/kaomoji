@@ -10,6 +10,6 @@ export default Route.extend({
   ajax: service(),
 
   model() {
-    return get(this, 'ajax').request('/kaomoji.json');
+    return get(this, 'ajax').request('/data.json');
   }
 });
