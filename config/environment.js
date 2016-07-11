@@ -20,7 +20,17 @@ module.exports = function(environment) {
 
     'ember-composable-helpers': {
       only: ['contains']
-    }
+    },
+
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalytics',
+        environments: ['production'],
+        config: {
+          id: 'UA-80593707-2'
+        }
+      }
+    ]
   };
 
   if (environment === 'development') {

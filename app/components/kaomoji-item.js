@@ -2,11 +2,14 @@ import Ember from 'ember';
 /* global noty */
 
 const {
-  Component
+  Component,
+  inject: { service },
+  get
 } = Ember;
 
 export default Component.extend({
   classNames: ['kaomoji-item'],
+  metrics: service(),
 
   _createNoty(text) {
     noty({
@@ -21,6 +24,11 @@ export default Component.extend({
   actions: {
     success(event) {
       this._createNoty(`${event.text} -- copied to clipboard!`);
+      get(this, 'metrics').trackEvent({
+        category: 'Button',
+        action: 'click',
+        label: event.text
+      });
     },
 
     error() {

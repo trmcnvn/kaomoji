@@ -39,6 +39,7 @@
     "ember-composable-helpers": "0.26.2",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
+    "ember-metrics": "0.6.2",
     "ember-pagefront": "0.11.1",
     "ember-power-select": "1.0.0-alpha.14",
     "ember-resolver": "^2.0.3",
