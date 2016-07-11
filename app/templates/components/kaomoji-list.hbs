@@ -1,8 +1,15 @@
 <div class="row">
   <div class="twelve columns">
-    <input class="u-full-width" type="text"
-           placeholder="Filter kaomoji... ___〆(・∀・)"
-           oninput={{action (mut filterValue) value="target.value"}}>
+    {{#power-select
+        searchPlaceholder="Filter kaomoji! ___〆(・∀・)"
+        allowClear=true
+        options=tags
+        selected=selectedTag
+        onchange=(action (mut selectedTag))
+        as |tag|
+    }}
+      {{tag}}
+    {{/power-select}}
   </div>
 </div>
 
@@ -12,7 +19,7 @@
       {{#each obj.kaomoji as |kaomoji|}}
         {{kaomoji-item
             kaomoji=kaomoji
-            isVisible=(or (is-empty filterValue) (contains (to-lower filterValue) obj.tags))}}
+            isVisible=(or (is-empty selectedTag) (contains selectedTag obj.tags))}}
       {{/each}}
     {{/each}}
   </div>

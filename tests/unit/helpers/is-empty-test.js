@@ -8,4 +8,5 @@ test('it works', function(assert) {
   assert.notOk(isEmpty(['hello']));
   assert.ok(isEmpty([undefined]));
   assert.ok(isEmpty(['']));
+  assert.ok(isEmpty([[]]));
 });
