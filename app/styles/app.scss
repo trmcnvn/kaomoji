@@ -7,3 +7,15 @@
 .ember-power-select-trigger {
   margin-bottom: 20px;
 }
+
+.contribute, .disvelop {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.disvelop {
+  font-weight: bold;
+  > .kaomoji {
+    color: #ee2e24;
+  }
+}
