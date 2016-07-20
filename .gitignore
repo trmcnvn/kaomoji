@@ -17,3 +17,6 @@ npm-debug.log
 testem.log
 
 .env.deploy.*
+jsconfig.json
+
+.env.deploy.*

@@ -6,21 +6,13 @@
     <title>Kaomoji</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{content-for "head"}}
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/kaomoji.css">
-
-    {{content-for "head-footer"}}
+    <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    {{content-for "body"}}
-
-    <script src="assets/vendor.js"></script>
-    <script src="assets/kaomoji.js"></script>
-
-    {{content-for "body-footer"}}
+    <div id="content"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/alertifyjs-alertify.js/1.0.11/js/alertify.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

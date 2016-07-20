@@ -1,26 +1,22 @@
 <div class="row">
   <div class="twelve columns">
-    {{#power-select
-        searchPlaceholder="Filter kaomoji! ___〆(・∀・)"
-        allowClear=true
-        options=tags
-        selected=selectedTag
-        onchange=(action (mut selectedTag))
-        as |tag|
-    }}
-      {{tag}}
-    {{/power-select}}
+    <select>
+      <option value="">ALL THE KAOMOJI! ___〆(・∀・)</option>
+      {{#each @data key="@index" as |item|}}
+        <optgroup label={{item.category}}>
+          {{#each item.kaomojis key="@index" as |item|}}
+            <option value={{item.category}}>{{item.category}}</option>
+          {{/each}}
+        </optgroup>
+      {{/each}}
+    </select>
   </div>
 </div>
 
 <div class="row">
   <div class="twelve columns kaomoji-list">
-    {{#each data as |obj|}}
-      {{#each obj.kaomoji as |kaomoji|}}
-        {{kaomoji-item
-            kaomoji=kaomoji
-            isVisible=(or (is-empty selectedTag) (contains selectedTag obj.tags))}}
-      {{/each}}
+    {{#each kaomoji key="@index" as |kaomoji|}}
+      <kaomoji-item kaomoji={{kaomoji}}></kaomoji-item>
     {{/each}}
   </div>
 </div>

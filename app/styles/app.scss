@@ -1,15 +1,13 @@
-@import "ember-power-select";
-
 .kaomoji-list {
   text-align: center;
 }
 
-.kaomoji-item {
-  display: inline-block;
+select {
+  width: 100%;
 }
 
-.ember-power-select-trigger {
-  margin-bottom: 20px;
+.kaomoji-item {
+  display: inline-block;
 }
 
 .contribute, .disvelop {

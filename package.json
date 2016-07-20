@@ -4,46 +4,21 @@
   "description": "Easy to use list of kaomoji!",
   "private": true,
   "directories": {
-    "doc": "doc",
     "test": "tests"
-  },
-  "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember test"
   },
   "repository": "",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Disvelop",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
-    "ember-ajax": "2.4.1",
+    "broccoli-sass-source-maps": "1.6.0",
+    "broccoli-sri-hash": "^2.1.2",
     "ember-cli": "2.5.0",
-    "ember-cli-app-version": "^1.0.0",
-    "ember-cli-babel": "^5.1.6",
-    "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-deploy": "0.5.1",
-    "ember-cli-eslint": "1.6.0",
-    "ember-cli-htmlbars": "^1.0.3",
-    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
-    "ember-cli-inject-live-reload": "^1.4.0",
-    "ember-cli-qunit": "^1.4.0",
-    "ember-cli-release": "0.2.8",
-    "ember-cli-sass": "5.3.1",
-    "ember-cli-sri": "^2.1.0",
-    "ember-cli-uglify": "^1.2.0",
-    "ember-clipboard": "1.0.1",
-    "ember-composable-helpers": "0.26.2",
-    "ember-export-application-global": "^1.0.5",
-    "ember-load-initializers": "^0.5.1",
-    "ember-metrics": "0.6.2",
     "ember-pagefront": "0.11.1",
-    "ember-power-select": "1.0.0-alpha.14",
-    "ember-resolver": "^2.0.3",
-    "ember-truth-helpers": "1.2.0",
-    "loader.js": "^4.0.1"
+    "experimental-glimmer-app": "rwjblue/experimental-glimmer-app"
   }
 }

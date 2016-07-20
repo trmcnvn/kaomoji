@@ -5,7 +5,9 @@
 [![Build Status](https://travis-ci.org/disvelop/kaomoji.svg?branch=master)](https://travis-ci.org/disvelop/kaomoji)
 [![Website](https://img.shields.io/website-up-down-green-red/http/kaomoji.disvelop.net.svg?maxAge=2592000)](https://kaomoji.disvelop.net/)
 
-To run the development environment for this application, you will need to have [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/), [Ember CLI](https://ember-cli.com/), and [Bower](https://bower.io/).
+Built using [Ember CLI & Glimmer 2](https://github.com/rwjblue/experimental-glimmer-app)!
+
+To run the development environment for this application, you will need to have [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/), and [Ember CLI](https://ember-cli.com/).
 
 ## Contributing
 
@@ -15,7 +17,6 @@ Contributions are welcome via pull requests and issues!
 
 * `git clone` this repository
 * `npm install`
-* `bower install`
 
 ## Running
 
@@ -32,7 +33,7 @@ Contributions are welcome via pull requests and issues!
 * `ember build`
 
 
-## License 
+## License
 Copyright (c) 2016 Disvelop
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
