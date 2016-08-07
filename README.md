@@ -2,8 +2,7 @@
 
 *＼(^ω^＼) All of your favourite kaomoji (／^ω^)／*
 
-[![Build Status](https://travis-ci.org/disvelop/kaomoji.svg?branch=master)](https://travis-ci.org/disvelop/kaomoji)
-[![Website](https://img.shields.io/website-up-down-green-red/http/kaomoji.disvelop.net.svg?maxAge=2592000)](https://kaomoji.disvelop.net/)
+[![Website](https://img.shields.io/website-up-down-green-red/http/kaomoji.vevix.net.svg?maxAge=2592000)](https://kaomoji.vevix.net/)
 
 Built using [Ember CLI & Glimmer 2](https://github.com/rwjblue/experimental-glimmer-app)!
 
@@ -34,7 +33,7 @@ Contributions are welcome via pull requests and issues!
 
 
 ## License
-Copyright (c) 2016 Disvelop
+Copyright (c) 2016 Thomas McNiven <vevix>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
