@@ -2,8 +2,7 @@
 
 *＼(^ω^＼) All of your favourite kaomoji (／^ω^)／*
 
-[![Build Status](https://travis-ci.org/disvelop/kaomoji.svg?branch=master)](https://travis-ci.org/disvelop/kaomoji)
-[![Website](https://img.shields.io/website-up-down-green-red/http/kaomoji.disvelop.net.svg?maxAge=2592000)](https://kaomoji.disvelop.net/)
+[![Website](https://img.shields.io/website-up-down-green-red/http/kaomoji.vevix.net.svg?maxAge=2592000)](https://kaomoji.vevix.net/)
 
 Built using [Ember CLI & Glimmer 2](https://github.com/rwjblue/experimental-glimmer-app)!
 
