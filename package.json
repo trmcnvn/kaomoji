@@ -18,6 +18,7 @@
     "broccoli-sri-hash": "^2.1.2",
     "ember-cli": "2.5.0",
     "ember-cli-deploy": "0.5.1",
+    "ember-cli-github-pages": "0.1.2",
     "ember-pagefront": "0.11.1",
     "experimental-glimmer-app": "rwjblue/experimental-glimmer-app"
   }
