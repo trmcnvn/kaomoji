@@ -1,0 +1,17 @@
+.kaomoji-list {
+  text-align: center; }
+
+select {
+  width: 100%; }
+
+.kaomoji-item {
+  display: inline-block; }
+
+.contribute, .me {
+  text-align: center;
+  margin-top: 10px; }
+
+.me {
+  font-weight: bold; }
+  .me > .kaomoji {
+    color: #ee2e24; }
